@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+  <definition name="base.definition" template="/WEB-INF/views/commons/layout.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="topbar" value="/WEB-INF/views/commons/topbar.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="sidebar" value="/WEB-INF/views/commons/sidebar.jsp" />
+    <put-attribute name="footer" value="/WEB-INF/views/commons/footer.jsp" />
+  </definition>
+  
+  <definition name="home" extends="base.definition">
+    <put-attribute name="title" value="Home" />
+    <put-attribute name="body" value="/WEB-INF/views/commons/main.jsp" />
+  </definition>
+  
+  <definition name="newCustomer" extends="base.definition">
+    <put-attribute name="title" value="New Customer" />
+    <put-attribute name="body" value="/WEB-INF/views/customer/customer.jsp" />
+  </definition> 
+  
+  <definition name="newServicing" extends="base.definition">
+    <put-attribute name="title" value="Servicing" />
+    <put-attribute name="body" value="/WEB-INF/views/customer/vehicle_servicing.jsp" />
+  </definition>
+  
+  <definition name="editCustomer" extends="base.definition">
+    <put-attribute name="title" value="Edit Customer" />
+    <put-attribute name="body" value="/WEB-INF/views/customer/cust_edit.jsp" />
+  </definition>
+  
+   <definition name="newEmployee" extends="base.definition">
+    <put-attribute name="title" value="Employee" />
+    <put-attribute name="body" value="/WEB-INF/views/customer/labour.jsp" />
+  </definition>
+  
+  <definition name="newInsCompany" extends="base.definition">
+    <put-attribute name="title" value="Insurance Company" />
+    <put-attribute name="body" value="/WEB-INF/views/customer/insurance.jsp" />
+  </definition>
+  
+  <definition name="editDemo" extends="base.definition">
+    <put-attribute name="title" value="Edit Customer" />
+    <put-attribute name="body" value="/WEB-INF/views/customer/demo.jsp" />
+  </definition>
+  
+  <!-- for 404 error page -->
+  <definition name="notFound" extends="base.definition">
+    <put-attribute name="title" value="404 Error" />
+    <put-attribute name="body" value="/WEB-INF/views/404.jsp" />
+  </definition>
+  
+   
+  <!-- 
+  <definition name="bill" extends="base.definition">
+    <put-attribute name="title" value="Report Bill" />
+    <put-attribute name="body" value="/WEB-INF/views/bill.jsp" />
+  </definition>
+  
+   <definition name="customers" extends="base.definition">
+    <put-attribute name="title" value="Customer List" />
+    <put-attribute name="body" value="/WEB-INF/views/customer.jsp" />
+  </definition> -->
+  
+</tiles-definitions>

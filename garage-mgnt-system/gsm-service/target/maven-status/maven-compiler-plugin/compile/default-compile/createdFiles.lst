@@ -1,0 +1,8 @@
+com\gsm\gsmservice\service\abs\CustomerService.class
+com\gsm\gsmservice\service\abs\VehicleServicingService.class
+com\gsm\gsmservice\service\abs\InsuranceService.class
+com\gsm\gsmservice\service\impl\EmployeeServiceImpl.class
+com\gsm\gsmservice\service\abs\EmployeeService.class
+com\gsm\gsmservice\service\impl\CustomerServiceImpl.class
+com\gsm\gsmservice\service\impl\InsuranceServiceImpl.class
+com\gsm\gsmservice\service\impl\VehicleServicingServiceImpl.class
